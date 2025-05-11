@@ -21,12 +21,13 @@
 title: Petra Bachanová
 email: petra.bachanova.gr@dartmouth.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a personal website for me!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  petra-bachanova
-
+social:
+  github: https://github.com/petra-bachanova/
+  orcid: https://orcid.org/0000-0002-9460-4109
+  scholar: https://scholar.google.com/citations?user=_52zJqgAAAAJ
+  linkedin: https://www.linkedin.com/in/petra-bachanova/
 
 # Build settings
 theme: minima
