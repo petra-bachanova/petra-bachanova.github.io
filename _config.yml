@@ -31,8 +31,15 @@ social:
 
 # Build settings
 theme: minima
+sass:
+  style: compressed
 plugins:
   - jekyll-feed
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

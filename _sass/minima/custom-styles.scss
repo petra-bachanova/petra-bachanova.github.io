@@ -1,3 +1,80 @@
 
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border: none; // remove any outlines
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.project-thumbnail img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.project-date {
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.project-excerpt {
+  margin: 0;
+  color: #333;
+}
+
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.profile-left {
+  flex: 2;
+}
+
+.profile-right {
+  flex: 3;
+  min-width: 300px;
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-left {
+    width: 50%; /* or 100%, adjust as needed */
+    margin-bottom: 1.5em;
+  }
+
+  .profile-right {
+    min-width: auto;
+  }
+}

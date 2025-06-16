@@ -13,19 +13,28 @@ permalink: /publications/
       {% assign current_year = pub.publication_year %}
       <h3>{{ current_year }}</h3>
     {% endif %}
-    
+
     <li>
       <span>
         <strong>
-          <a href="{{ pub.url }}" target="_blank">{{ pub.title }}</a>
+          {% if pub.url %}
+            <a href="{{ pub.url }}" target="_blank">{{ pub.title }}.</a>
+          {% else %}
+            {{ pub.title }}.
+          {% endif %}
         </strong>
         <span>
-          <em>
-            {{ pub.authors | replace: "[X], Petra", "<u>[X], Petra</u>" }}
-          </em>
-        </span>,
-        <em>{{ pub.journal }}</em>, {{ pub.publication_year }}.
+          {% assign authors = pub.authors | split: "," %}
+          {% for author in authors %}
+            {% assign author = author | strip %}
+            {% if author contains "Petra" %}
+              <u>{{ author }}</u>{% unless forloop.last %},{% endunless %}
+            {% else %}
+              {{ author }}{% unless forloop.last %},{% endunless %}
+            {% endif %}
+          {% endfor %}
+        </span>, <em>{{ pub.journal }}</em>, {{ pub.publication_year }}.
       </span>
-    </li><br>
+    </li>
   {% endfor %}
 </ul>
