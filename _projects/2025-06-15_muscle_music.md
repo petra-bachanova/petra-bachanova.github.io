@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Turning Muscle Activity into Music
+title: Turning muscle activity into music
 thumbnail: /assets/img/muscle music/spiker_box.JPEG
 date: 2025-06-15
 modified_date: 2025-06-15

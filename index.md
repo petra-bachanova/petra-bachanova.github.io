@@ -34,12 +34,10 @@ permalink: /
   <!-- Right side: intro text -->
   <div class="profile-right">
     <p style="font-size: 0.9em; line-height: 1.6;">
-      Hi, I'm Petra - a neuro(data)science PhD student.<br><br>
-      In my research I explore how the brain’s micro-world (cells, genes, proteins) gives rise to its macro-world (brain rhythms), to better understand neurological conditions such as epilepsy. I’m curious whether subtle differences in the structure and organization of brain cells - and their electrical activity - might help explain why some treatments in epilepsy work for certain individuals but not others.<br><br>
-      To figure that out, I analyse complex medical data (EEG & omics) using Python, R, bash, and sometimes MATLAB (reluctantly).<br>
-      I run a lot of things on HPC.<br><br>
-      This site is just a little nook for my projects and research.<br>
-      Welcome!
+      Hello! I'm Petra. I'm a neuroscience PhD researcher, studying epilepsy genetics.<br><br>
+      My research focuses on mutations that arise during brain development (rather than being inherited) and how they might increase the risk of epileptic seizures or influence clinical outcomes in patients. I study this by analysing EEG recordings and -omics data, using Python, R, and (reluctantly) MATLAB.<br><br>
+      When I'm not in the lab, I try to spend as much time as possible outdoors or woodworking (see projects). <br><br>
+      Welcome to my site!
     </p>
   </div>
 </div>
